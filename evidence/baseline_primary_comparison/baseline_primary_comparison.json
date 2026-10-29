@@ -1,0 +1,91 @@
+{
+  "comparison_name": "Baseline vs primary embedding comparison",
+  "seed": "baseline-primary-comparison-seed",
+  "notes": [
+    "PNG transform check applies deterministic Gaussian noise.",
+    "JPEG transform check applies JPEG recompression at quality factor 90.",
+    "Transform failures are reported as evidence, not hidden."
+  ],
+  "results": [
+    {
+      "family": "PNG",
+      "variant": "baseline",
+      "method": "lsb_replacement",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\evidence\\baseline_primary_comparison\\covers\\comparison_cover.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\evidence\\baseline_primary_comparison\\stego\\png_lsb_replacement.png",
+      "roundtrip_ok": true,
+      "transform_check": "gaussian_noise_seed_2026",
+      "transform_roundtrip_ok": false,
+      "transform_failure_reason": "payload bits changed after noise",
+      "ssim": 0.9999976107125198,
+      "psnr": 79.10781893802037,
+      "mse": 0.0007985432942708334,
+      "payload_bytes": 39,
+      "settings": {
+        "mode": "lsb_replacement"
+      }
+    },
+    {
+      "family": "PNG",
+      "variant": "primary",
+      "method": "lsb_matching",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\evidence\\baseline_primary_comparison\\covers\\comparison_cover.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\evidence\\baseline_primary_comparison\\stego\\png_lsb_matching.png",
+      "roundtrip_ok": true,
+      "transform_check": "gaussian_noise_seed_2026",
+      "transform_roundtrip_ok": false,
+      "transform_failure_reason": "payload bits changed after noise",
+      "ssim": 0.9999976108183218,
+      "psnr": 79.10781893802037,
+      "mse": 0.0007985432942708334,
+      "payload_bytes": 39,
+      "settings": {
+        "mode": "lsb_matching"
+      }
+    },
+    {
+      "family": "JPEG",
+      "variant": "baseline",
+      "method": "standard_dct",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\evidence\\baseline_primary_comparison\\covers\\comparison_cover.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\evidence\\baseline_primary_comparison\\stego\\jpeg_standard_dct.jpg",
+      "roundtrip_ok": true,
+      "transform_check": "jpeg_recompression_q90",
+      "transform_roundtrip_ok": false,
+      "transform_failure_reason": "extracted payload did not match",
+      "ssim": 0.9997172846651945,
+      "psnr": 56.43505510721914,
+      "mse": 0.14776611328125,
+      "payload_bytes": 40,
+      "settings": {
+        "payload_rate_bpnzac": 0.1,
+        "use_ecc": false,
+        "ecc_symbols": 64,
+        "robust_mode": false
+      }
+    },
+    {
+      "family": "JPEG",
+      "variant": "primary",
+      "method": "robust_dct_with_reed_solomon_ecc",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\evidence\\baseline_primary_comparison\\covers\\comparison_cover.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\evidence\\baseline_primary_comparison\\stego\\jpeg_robust_dct_ecc.jpg",
+      "roundtrip_ok": true,
+      "transform_check": "jpeg_recompression_q90",
+      "transform_roundtrip_ok": true,
+      "transform_failure_reason": null,
+      "ssim": 0.982811121929512,
+      "psnr": 38.21728394073602,
+      "mse": 9.802841186523438,
+      "payload_bytes": 40,
+      "settings": {
+        "payload_rate_bpnzac": 0.05,
+        "use_ecc": true,
+        "ecc_symbols": 64,
+        "robust_mode": true
+      }
+    }
+  ],
+  "json_report": "C:\\Users\\User\\Documents\\Playground\\evidence\\baseline_primary_comparison\\baseline_primary_comparison.json",
+  "markdown_report": "C:\\Users\\User\\Documents\\Playground\\evidence\\baseline_primary_comparison\\baseline_primary_comparison.md"
+}

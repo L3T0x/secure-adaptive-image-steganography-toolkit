@@ -1,0 +1,15 @@
+{
+  "dataset_name": "BOSSbase 1.01",
+  "source_url": "https://dde.binghamton.edu/download/ImageDB/BOSSbase_1.01.zip",
+  "official_source_page": "https://dde.binghamton.edu/download/",
+  "downloaded_archive": "datasets/BOSSbase_1.01.zip",
+  "archive_bytes": 1671626159,
+  "archive_sha256": "9823e888d4cfa36e94a58676416ea840de3edf1eb663f605451abae3ba8c8524",
+  "zip_entry_count": 10001,
+  "image_entry_count": 10000,
+  "image_format_in_archive": "PGM grayscale",
+  "observed_image_entry_size_bytes": 262159,
+  "zip_integrity_test": "passed",
+  "download_verified_utc": "2026-06-29T16:50:35Z",
+  "toolkit_usage_note": "BOSSbase PGM images are converted into PNG and JPEG carriers before embedding because the toolkit scope is PNG/JPEG."
+}

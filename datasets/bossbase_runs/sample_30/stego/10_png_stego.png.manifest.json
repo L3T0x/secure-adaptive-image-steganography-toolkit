@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "created_utc": "2026-07-03T02:54:49.927531+00:00",
+  "carrier_format": "PNG",
+  "engine_name": "PNGEngine",
+  "seed": "c08629af297cb18087cd84ed90a9d2b6",
+  "embedded_payload_bits": 1208,
+  "encrypted_envelope_sha256": "be108e3b046e67078109dcfcf9ac2035338f87cbb2b7991de094aa6d85b4841e",
+  "selected_config": {
+    "engine_name": "PNGEngine",
+    "engine_class": "PNGEngine",
+    "carrier_format": "PNG",
+    "embed_kwargs": {
+      "mode": "lsb_matching"
+    },
+    "mode": "lsb_matching",
+    "capacity_bits": 786432,
+    "payload_size_bits": 1208
+  },
+  "justification_trace": [
+    "[RULE EVAL] Carrier format is PNG -> Engine set to PNGEngine.",
+    "[RULE EVAL] 'noise' found in expected_transformations -> Mode set to lsb_matching to reduce simple statistical exposure versus replacement.",
+    "[CAPACITY CHECK] Payload size 1208 bits fits within PNG spatial capacity of 786432 bits (width=512, height=512, channels=3) -> PASS."
+  ],
+  "expected_transforms": [
+    "noise"
+  ],
+  "carrier_metadata": {
+    "format": "PNG",
+    "width": 512,
+    "height": 512,
+    "channels": 3,
+    "capacity_bits": 786432
+  },
+  "engine_metadata": {}
+}

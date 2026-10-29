@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secure-adaptive-stego-toolkit"
+version = "0.1.0"
+description = "Secure adaptive PNG/JPEG steganography toolkit with Argon2id, AES-GCM, explainable selection, and ROC/AUC evaluation."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Afif Jazimin Bin Saiful Zaidi" }
+]
+keywords = [
+  "steganography",
+  "security",
+  "cryptography",
+  "argon2id",
+  "aes-gcm",
+  "steganalysis",
+  "jpeg",
+  "png"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Security",
+  "Topic :: Multimedia :: Graphics"
+]
+dependencies = [
+  "cryptography>=45",
+  "jpeglib>=1.0",
+  "numpy>=1.26",
+  "opencv-python>=4.9",
+  "pillow>=10",
+  "reedsolo>=1.7",
+  "rich>=13.7",
+  "scikit-image>=0.22",
+  "scikit-learn>=1.4",
+  "typer>=0.12"
+]
+
+[project.optional-dependencies]
+gui = [
+  "customtkinter>=5.2",
+  "tkinterdnd2>=0.4"
+]
+dev = [
+  "mypy>=1.10",
+  "pytest>=8",
+  "ruff>=0.5"
+]
+
+[project.scripts]
+stegtoolkit = "main:app"
+stegtoolkit-gui = "gui:main"
+stegtoolkit-bossbase = "bossbase_benchmark:main"
+stegtoolkit-compare = "baseline_primary_comparison:main"
+
+[tool.setuptools]
+py-modules = [
+  "baseline_primary_comparison",
+  "crypto_layer",
+  "bossbase_benchmark",
+  "eval_harness",
+  "gui",
+  "main",
+  "selector",
+  "steganalysis",
+  "stego_engines"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_configs = true

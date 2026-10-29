@@ -1,0 +1,1980 @@
+{
+  "benchmark_name": "BOSSbase-sourced PNG/JPEG secure steganography benchmark",
+  "created_utc": "2026-07-03T02:56:16.152995+00:00",
+  "archive_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\BOSSbase_1.01.zip",
+  "archive_sha256": "9823e888d4cfa36e94a58676416ea840de3edf1eb663f605451abae3ba8c8524",
+  "dataset_manifest": {
+    "dataset_name": "BOSSbase 1.01",
+    "source_url": "https://dde.binghamton.edu/download/ImageDB/BOSSbase_1.01.zip",
+    "official_source_page": "https://dde.binghamton.edu/download/",
+    "downloaded_archive": "datasets/BOSSbase_1.01.zip",
+    "archive_bytes": 1671626159,
+    "archive_sha256": "9823e888d4cfa36e94a58676416ea840de3edf1eb663f605451abae3ba8c8524",
+    "zip_entry_count": 10001,
+    "image_entry_count": 10000,
+    "image_format_in_archive": "PGM grayscale",
+    "observed_image_entry_size_bytes": 262159,
+    "zip_integrity_test": "passed",
+    "download_verified_utc": "2026-06-29T16:50:35Z",
+    "toolkit_usage_note": "BOSSbase PGM images are converted into PNG and JPEG carriers before embedding because the toolkit scope is PNG/JPEG."
+  },
+  "bossbase_source_format": "PGM grayscale",
+  "toolkit_carrier_formats": [
+    "PNG",
+    "JPEG"
+  ],
+  "requested_image_limit": 30,
+  "start_index": 0,
+  "evaluated_pairs": 60,
+  "password_sha256": "2e9bcaa153c61da03e7d43023f9e9d1b307647b89706725f80cfe81d212c1f1b",
+  "records": [
+    {
+      "source_entry": "BOSSbase_1.01/1.pgm",
+      "source_id": "1",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\1.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\1_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\1_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\1_png_report.json",
+      "payload_bytes": 76,
+      "payload_sha256": "9788e74e386474ba8f7053e6140ca4a52800098a3a6a579ca01eb6ab063e5d63",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.29779033113822917,
+      "confusion_matrix": [
+        [
+          67,
+          112
+        ],
+        [
+          125,
+          54
+        ]
+      ],
+      "ssim": 0.9999930497866659,
+      "psnr": 79.2270032729668,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66643499288887,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/1.pgm",
+      "source_id": "1",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\1.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\1_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\1_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\1_jpeg_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "d28cb22aa8c38e4fb9ad41354a4eeef9855b9b0a2db2ceda489e4c5ff4684593",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.27862738366467965,
+      "confusion_matrix": [
+        [
+          66,
+          113
+        ],
+        [
+          136,
+          43
+        ]
+      ],
+      "ssim": 0.9835751317186671,
+      "psnr": 36.69565334113187,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.67472661284445,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/2.pgm",
+      "source_id": "2",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\2.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\2_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\2_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\2_png_report.json",
+      "payload_bytes": 76,
+      "payload_sha256": "af6ec7e29d6bd35515fafb4d5b2c0b6e88068815d591cda1e5a49bfbb082870e",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2068443556692987,
+      "confusion_matrix": [
+        [
+          43,
+          136
+        ],
+        [
+          131,
+          48
+        ]
+      ],
+      "ssim": 0.9999905066758541,
+      "psnr": 79.40843921521144,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66635022252846,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/2.pgm",
+      "source_id": "2",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\2.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\2_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\2_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\2_jpeg_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "990aba80d30254bd98410c760a866cd12d48fc735cbe1d8bde9553d1ba4b7140",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2865391217502575,
+      "confusion_matrix": [
+        [
+          54,
+          125
+        ],
+        [
+          126,
+          53
+        ]
+      ],
+      "ssim": 0.9887740156195705,
+      "psnr": 44.469252662742164,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.29246718731902,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/3.pgm",
+      "source_id": "3",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\3.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\3_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\3_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\3_png_report.json",
+      "payload_bytes": 76,
+      "payload_sha256": "5bb975b4f9b5300c8073a320dc5bd3519ee5e7272b7523eafefce8e28295ea68",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21591086420523703,
+      "confusion_matrix": [
+        [
+          48,
+          131
+        ],
+        [
+          136,
+          43
+        ]
+      ],
+      "ssim": 0.9999945117027522,
+      "psnr": 79.26986162886766,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66648372342507,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/3.pgm",
+      "source_id": "3",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\3.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\3_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\3_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\3_jpeg_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "b831deb34db50955cb2b60ae9d770ec03fa63661084a3446bced0b0d95866bdc",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.25342529883586656,
+      "confusion_matrix": [
+        [
+          52,
+          127
+        ],
+        [
+          135,
+          44
+        ]
+      ],
+      "ssim": 0.9833225448214834,
+      "psnr": 37.00083123128869,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.66630704960501,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/4.pgm",
+      "source_id": "4",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\4.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\4_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\4_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\4_png_report.json",
+      "payload_bytes": 76,
+      "payload_sha256": "60e0aaf973f7feff0f13a3db441bbf5443ec7b0caf3691efa734631c0b4d8fbb",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2146468587122749,
+      "confusion_matrix": [
+        [
+          47,
+          132
+        ],
+        [
+          134,
+          45
+        ]
+      ],
+      "ssim": 0.999994453997472,
+      "psnr": 79.17050888519117,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66648179991573,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/4.pgm",
+      "source_id": "4",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\4.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\4_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\4_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\4_jpeg_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "eac407648a27294e82ec7f0d19a6619054fdd8565a230e8b25c52d268e3c560a",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.26007303142848226,
+      "confusion_matrix": [
+        [
+          49,
+          130
+        ],
+        [
+          130,
+          49
+        ]
+      ],
+      "ssim": 0.980209671042031,
+      "psnr": 36.543961505959196,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.56254459028993,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/5.pgm",
+      "source_id": "5",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\5.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\5_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\5_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\5_png_report.json",
+      "payload_bytes": 76,
+      "payload_sha256": "31af925bfead4e496d642e35596507a2d7649095ba4df9dade59e5d88222fd31",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21569239412003371,
+      "confusion_matrix": [
+        [
+          48,
+          131
+        ],
+        [
+          133,
+          46
+        ]
+      ],
+      "ssim": 0.9999936792597309,
+      "psnr": 79.29867065536496,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66645597532437,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/5.pgm",
+      "source_id": "5",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\5.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\5_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\5_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\5_jpeg_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "227fa8a2b062253435fd502c7ffc409080907f3b0b1fec55d6294f7123b1dc7a",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2540963140975625,
+      "confusion_matrix": [
+        [
+          41,
+          138
+        ],
+        [
+          127,
+          52
+        ]
+      ],
+      "ssim": 0.9761420038927638,
+      "psnr": 37.54688276956895,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 65.8714001297588,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/6.pgm",
+      "source_id": "6",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\6.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\6_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\6_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\6_png_report.json",
+      "payload_bytes": 76,
+      "payload_sha256": "eeb782d1dff7f8260cd4a304ddab27b1509f6a52ac8821d5df5b55c200be3dec",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2147560937548766,
+      "confusion_matrix": [
+        [
+          49,
+          130
+        ],
+        [
+          137,
+          42
+        ]
+      ],
+      "ssim": 0.9999954449230471,
+      "psnr": 79.27704598918102,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66651483076824,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/6.pgm",
+      "source_id": "6",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\6.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\6_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\6_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\6_jpeg_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "8f44e6f8593e0052b740345a3453d426d0eea94baae4a97d68825d551388e8c8",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2602915015136856,
+      "confusion_matrix": [
+        [
+          55,
+          124
+        ],
+        [
+          138,
+          41
+        ]
+      ],
+      "ssim": 0.9817756232564284,
+      "psnr": 33.99922021563271,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.6147429974365,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/7.pgm",
+      "source_id": "7",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\7.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\7_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\7_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\7_png_report.json",
+      "payload_bytes": 76,
+      "payload_sha256": "314decb65c1a55d4c45fdb62eabeac9f3cc55241c5e36801993f62bc98420978",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2117599325863737,
+      "confusion_matrix": [
+        [
+          51,
+          128
+        ],
+        [
+          139,
+          40
+        ]
+      ],
+      "ssim": 0.9999941275914331,
+      "psnr": 79.47565724383503,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66647091971443,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/7.pgm",
+      "source_id": "7",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\7.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\7_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\7_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\7_jpeg_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "2200b9114d8dcf59757fc82a063c8b5abd20a5358c0ca4dbb1171409de12ef78",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2484629069005337,
+      "confusion_matrix": [
+        [
+          58,
+          121
+        ],
+        [
+          139,
+          40
+        ]
+      ],
+      "ssim": 0.9822673700993204,
+      "psnr": 34.89045570677171,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.63113455886624,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/8.pgm",
+      "source_id": "8",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\8.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\8_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\8_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\8_png_report.json",
+      "payload_bytes": 76,
+      "payload_sha256": "fb6c00a3080530109905623b5d472bffffc73fd9b14cfd24b350317654e97aa1",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.20945039168565274,
+      "confusion_matrix": [
+        [
+          45,
+          134
+        ],
+        [
+          135,
+          44
+        ]
+      ],
+      "ssim": 0.9999951255449018,
+      "psnr": 79.3495509255804,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66650418483006,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/8.pgm",
+      "source_id": "8",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\8.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\8_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\8_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\8_jpeg_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "4b0541c90a911672dfc4cbc99c1ef40b667023035a9542e802e9661dd2dfbb24",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2483380668518461,
+      "confusion_matrix": [
+        [
+          49,
+          130
+        ],
+        [
+          133,
+          46
+        ]
+      ],
+      "ssim": 0.981964267359959,
+      "psnr": 36.28125908115195,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.62103113422086,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/9.pgm",
+      "source_id": "9",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\9.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\9_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\9_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\9_png_report.json",
+      "payload_bytes": 76,
+      "payload_sha256": "080c1cdcf91c023dfcb99148702b13f6285bca1fec35ccb600491be675bfcd6e",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21505258887050965,
+      "confusion_matrix": [
+        [
+          46,
+          133
+        ],
+        [
+          136,
+          43
+        ]
+      ],
+      "ssim": 0.9999961685135847,
+      "psnr": 79.19160825374809,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66653895045282,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/9.pgm",
+      "source_id": "9",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\9.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\9_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\9_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\9_jpeg_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "94e91f57ce128938d921a240fbd4285b7cf7a54b52bc87d368090b94dd2bd719",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2872101370119534,
+      "confusion_matrix": [
+        [
+          54,
+          125
+        ],
+        [
+          129,
+          50
+        ]
+      ],
+      "ssim": 0.9751015665753138,
+      "psnr": 35.83737183991954,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.39227444139935,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/10.pgm",
+      "source_id": "10",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\10.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\10_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\10_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\10_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "8f5ea33fb10efe0f6b8b1c20fe8f4ad2a4098b77ae024d1c91e729dfa36fc98d",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.20926313161262133,
+      "confusion_matrix": [
+        [
+          41,
+          138
+        ],
+        [
+          130,
+          49
+        ]
+      ],
+      "ssim": 0.9999964973424823,
+      "psnr": 79.44565405148904,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66654991141608,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/10.pgm",
+      "source_id": "10",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\10.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\10_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\10_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\10_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "d237703ef167ca13963f6599b68760750be218ff6db18d175d357dbc38f34e47",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.25434599419493775,
+      "confusion_matrix": [
+        [
+          47,
+          132
+        ],
+        [
+          130,
+          49
+        ]
+      ],
+      "ssim": 0.9826858475094271,
+      "psnr": 35.63372877829094,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.64508380586979,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/11.pgm",
+      "source_id": "11",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\11.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\11_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\11_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\11_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "c12f37f5d932a36ff983930d3358064b66e8128bdb248bce78c88b781ab503dc",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21093286726381824,
+      "confusion_matrix": [
+        [
+          49,
+          130
+        ],
+        [
+          134,
+          45
+        ]
+      ],
+      "ssim": 0.9999949265565394,
+      "psnr": 79.27704598918102,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66649755188465,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/11.pgm",
+      "source_id": "11",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\11.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\11_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\11_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\11_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "cb64f13a9539749171691b2a949b34d5cc8f27c684ba3479b63e07d6e244d38c",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.24832246184576012,
+      "confusion_matrix": [
+        [
+          46,
+          133
+        ],
+        [
+          134,
+          45
+        ]
+      ],
+      "ssim": 0.98267553706514,
+      "psnr": 37.45673110274177,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.64474012439355,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/12.pgm",
+      "source_id": "12",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\12.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\12_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\12_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\12_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "019519dd00ff9c5078a84da1b8823e10f42e4bc82f5a55fb1e679ba5d997bdc2",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21495895883399394,
+      "confusion_matrix": [
+        [
+          47,
+          132
+        ],
+        [
+          135,
+          44
+        ]
+      ],
+      "ssim": 0.9999940340428856,
+      "psnr": 79.3495509255804,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66646780142952,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/12.pgm",
+      "source_id": "12",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\12.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\12_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\12_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\12_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "c59a96f0d937daf95547b740d10703acc05972ffa116e7d595851880c268b3d0",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.25601572984613463,
+      "confusion_matrix": [
+        [
+          46,
+          133
+        ],
+        [
+          133,
+          46
+        ]
+      ],
+      "ssim": 0.982245961569921,
+      "psnr": 39.351984094834265,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.63042094121958,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/13.pgm",
+      "source_id": "13",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\13.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\13_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\13_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\13_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "a764395e789c80c8a6c5b7b93a78f49f7737e265139750a8be6019469739bf48",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21319559314628134,
+      "confusion_matrix": [
+        [
+          47,
+          132
+        ],
+        [
+          135,
+          44
+        ]
+      ],
+      "ssim": 0.9999955302656964,
+      "psnr": 79.12861520195159,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66651767552321,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/13.pgm",
+      "source_id": "13",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\13.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\13_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\13_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\13_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "d4d771226f6ace67617fecf17d329ccaf7cf403b1253a44caec3ac92c7a41665",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2582316407103399,
+      "confusion_matrix": [
+        [
+          49,
+          130
+        ],
+        [
+          128,
+          51
+        ]
+      ],
+      "ssim": 0.981760440024633,
+      "psnr": 36.8248626140778,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.61423688970999,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/14.pgm",
+      "source_id": "14",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\14.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\14_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\14_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\14_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "23d225e4ca7a841e77f09bc14d1768d84ec3b96e736054ec1906e3dd56d6b27e",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21275865297587465,
+      "confusion_matrix": [
+        [
+          46,
+          133
+        ],
+        [
+          135,
+          44
+        ]
+      ],
+      "ssim": 0.9999920532231302,
+      "psnr": 79.26986162886766,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66640177410433,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/14.pgm",
+      "source_id": "14",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\14.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\14_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\14_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\14_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "da9b22915b9accd26e8356b782afe8394ed514f80949722f04a4bc73786830a9",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.3054055741081739,
+      "confusion_matrix": [
+        [
+          55,
+          124
+        ],
+        [
+          125,
+          54
+        ]
+      ],
+      "ssim": 0.9824057247233539,
+      "psnr": 37.50740164640333,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.0801908241118,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/15.pgm",
+      "source_id": "15",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\15.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\15_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\15_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\15_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "dc0fa97cf4965b09fe3bc525bf23faeef48c2c7dcae55eaa2266473b5825a005",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21236852782372584,
+      "confusion_matrix": [
+        [
+          49,
+          130
+        ],
+        [
+          136,
+          43
+        ]
+      ],
+      "ssim": 0.9999929321498883,
+      "psnr": 79.43818552889346,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66643107166294,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/15.pgm",
+      "source_id": "15",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\15.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\15_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\15_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\15_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "a650614fce09f0179a19b2b3d30ac67fa0083f78207d184a002af1ceee17a8ac",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.5695827221372617,
+      "confusion_matrix": [
+        [
+          91,
+          88
+        ],
+        [
+          77,
+          102
+        ]
+      ],
+      "ssim": 0.9785730237842922,
+      "psnr": 37.65482979842413,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 61.31358598365896,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/16.pgm",
+      "source_id": "16",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\16.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\16_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\16_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\16_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "745fd6da04475c56c83aecd7242e08c249dbffca0e8a7b422aeab4b0f4717c01",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21378858337754753,
+      "confusion_matrix": [
+        [
+          44,
+          135
+        ],
+        [
+          133,
+          46
+        ]
+      ],
+      "ssim": 0.9999909629331284,
+      "psnr": 79.1355694785681,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66636543110428,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/16.pgm",
+      "source_id": "16",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\16.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\16_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\16_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\16_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "a7a5c3360d9f61dabbda18e5a82612c7b5f4c99a71579e70b5fd85fe68ce955b",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2668456040697856,
+      "confusion_matrix": [
+        [
+          52,
+          127
+        ],
+        [
+          129,
+          50
+        ]
+      ],
+      "ssim": 0.9883123845058656,
+      "psnr": 42.49234157896902,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.27707948352885,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/17.pgm",
+      "source_id": "17",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\17.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\17_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\17_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\17_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "0be5b8c01cd8dd181bf2fa9822fb6ecac774656324d2be4880ae7c22cabdf688",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.22468087762554229,
+      "confusion_matrix": [
+        [
+          48,
+          131
+        ],
+        [
+          132,
+          47
+        ]
+      ],
+      "ssim": 0.9999933440453571,
+      "psnr": 78.95160548971043,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.6664448015119,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/17.pgm",
+      "source_id": "17",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\17.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\17_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\17_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\17_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "f934e998417c0e4ab488f8863b48e1a694a2a39cdaa6e3dd672ad10d519667d3",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.26629942885677726,
+      "confusion_matrix": [
+        [
+          48,
+          131
+        ],
+        [
+          128,
+          51
+        ]
+      ],
+      "ssim": 0.9798780120629944,
+      "psnr": 34.667314759531074,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.5514892909887,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/18.pgm",
+      "source_id": "18",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\18.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\18_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\18_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\18_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "06f707bbcb5e680866f3e63f7a1d083eee00a19aa469b911482b75f224d11db1",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21280546799413252,
+      "confusion_matrix": [
+        [
+          45,
+          134
+        ],
+        [
+          135,
+          44
+        ]
+      ],
+      "ssim": 0.9999926302948512,
+      "psnr": 79.46813699118705,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66642100982837,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/18.pgm",
+      "source_id": "18",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\18.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\18_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\18_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\18_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "5eb0cb9744d53c888903f033692b540df19ebf3d2543f1b1d6074264226e4c0e",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.24986735744826943,
+      "confusion_matrix": [
+        [
+          49,
+          130
+        ],
+        [
+          127,
+          52
+        ]
+      ],
+      "ssim": 0.9838718593502908,
+      "psnr": 37.50515044385494,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.12906197834303,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/19.pgm",
+      "source_id": "19",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\19.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\19_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\19_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\19_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "3fa1b6f9cabfb0605ccae6b740a9db4ce1a2a5526a4baf4392f5ad0d15a5014a",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2141474985175244,
+      "confusion_matrix": [
+        [
+          44,
+          135
+        ],
+        [
+          133,
+          46
+        ]
+      ],
+      "ssim": 0.9999951157170037,
+      "psnr": 79.2914504628141,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66650385723345,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/19.pgm",
+      "source_id": "19",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\19.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\19_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\19_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\19_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "23f10990f8d326b07a9843befc0852c498797415dc128a2c0735facde6926e09",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2534877188602104,
+      "confusion_matrix": [
+        [
+          48,
+          131
+        ],
+        [
+          131,
+          48
+        ]
+      ],
+      "ssim": 0.9815408824373207,
+      "psnr": 35.24768308010693,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.60691830346624,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/20.pgm",
+      "source_id": "20",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\20.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\20_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\20_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\20_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "a0cf88360281ff7e5aa95c238d54d4144a3a7967bec97ab574307472ba9af51c",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21216566274460846,
+      "confusion_matrix": [
+        [
+          52,
+          127
+        ],
+        [
+          143,
+          36
+        ]
+      ],
+      "ssim": 0.9999928401277786,
+      "psnr": 79.03920858818071,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66642800425929,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/20.pgm",
+      "source_id": "20",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\20.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\20_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\20_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\20_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "525cd5e28e7c9b80f2714e4e0782b0b1734b06d092205f3c726dbd13befed286",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.5632314846602791,
+      "confusion_matrix": [
+        [
+          92,
+          87
+        ],
+        [
+          69,
+          110
+        ]
+      ],
+      "ssim": 0.9778858163787166,
+      "psnr": 39.761482893527045,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 61.714094901938616,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/21.pgm",
+      "source_id": "21",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\21.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\21_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\21_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\21_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "ae45f4d59d513e37ebd888029c14ece75c93343a7d7c68a5ee7592f365bce0db",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.20884179644830062,
+      "confusion_matrix": [
+        [
+          41,
+          138
+        ],
+        [
+          129,
+          50
+        ]
+      ],
+      "ssim": 0.9999931746626674,
+      "psnr": 79.3059028715559,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66643915542225,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/21.pgm",
+      "source_id": "21",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\21.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\21_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\21_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\21_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "c94edd24614e3908bbcdbdffa6ed6f8c15943c6fa3a162d1fc31927209d25991",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2797821541150401,
+      "confusion_matrix": [
+        [
+          48,
+          131
+        ],
+        [
+          123,
+          56
+        ]
+      ],
+      "ssim": 0.9798780822248195,
+      "psnr": 35.39855866933426,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 65.99593607416065,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/22.pgm",
+      "source_id": "22",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\22.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\22_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\22_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\22_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "b353859cd9e581f4d69e69eaa9d87b6e3a76b2d1716bc441ce991df08a89674d",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21506819387659562,
+      "confusion_matrix": [
+        [
+          49,
+          130
+        ],
+        [
+          136,
+          43
+        ]
+      ],
+      "ssim": 0.9999949596019775,
+      "psnr": 79.24124244906359,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66649865339924,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/22.pgm",
+      "source_id": "22",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\22.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\22_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\22_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\22_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "3afc9eb4ba8cd91d0031375b9d3264a31402814b82607e33c50f2afdba8161f2",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.3028463531100777,
+      "confusion_matrix": [
+        [
+          64,
+          115
+        ],
+        [
+          123,
+          56
+        ]
+      ],
+      "ssim": 0.9747913983970397,
+      "psnr": 34.40137780187027,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 65.826379946568,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/23.pgm",
+      "source_id": "23",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\23.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\23_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\23_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\23_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "8211721afe760c914abad99fd19166acd68bb6cf46a21b46f6c776a94a12db76",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21525545394962706,
+      "confusion_matrix": [
+        [
+          44,
+          135
+        ],
+        [
+          134,
+          45
+        ]
+      ],
+      "ssim": 0.9999930743557491,
+      "psnr": 79.41585671457054,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.6664358118583,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/23.pgm",
+      "source_id": "23",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\23.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\23_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\23_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\23_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "8e7de4fa72d1ced55ba667fafc8b71c46535dbbdfc7b9950eb50da03aba78337",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.25116257295340344,
+      "confusion_matrix": [
+        [
+          44,
+          135
+        ],
+        [
+          126,
+          53
+        ]
+      ],
+      "ssim": 0.9868347436060215,
+      "psnr": 35.64103171161645,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.22782478686737,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/24.pgm",
+      "source_id": "24",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\24.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\24_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\24_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\24_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "d40fd0651f0681233e0b059db62e6b976974d1b89a5370c1550eaafdeaf12c6b",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.20935676164913702,
+      "confusion_matrix": [
+        [
+          43,
+          136
+        ],
+        [
+          132,
+          47
+        ]
+      ],
+      "ssim": 0.9999925440963816,
+      "psnr": 79.21990115393673,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66641813654606,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/24.pgm",
+      "source_id": "24",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\24.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\24_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\24_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\24_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "79298f3b1bc0fe3e9f0590bfd5993c6289108a2bed9ed5abd2598159b30ca54e",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.26623700883243345,
+      "confusion_matrix": [
+        [
+          51,
+          128
+        ],
+        [
+          129,
+          50
+        ]
+      ],
+      "ssim": 0.983995273646794,
+      "psnr": 36.46720098383787,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.13317578822647,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/25.pgm",
+      "source_id": "25",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\25.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\25_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\25_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\25_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "06d13a86137b9f421585d67450656630710292edd6a1af86567234d2c780e920",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21310196310976562,
+      "confusion_matrix": [
+        [
+          51,
+          128
+        ],
+        [
+          140,
+          39
+        ]
+      ],
+      "ssim": 0.9999931805951228,
+      "psnr": 79.2128106302082,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66643935317076,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/25.pgm",
+      "source_id": "25",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\25.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\25_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\25_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\25_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "ec66e4aa377006e4e4a36ca752f723bcdc55e0d8eaea3a82380a86262c27140f",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.259183546081583,
+      "confusion_matrix": [
+        [
+          59,
+          120
+        ],
+        [
+          136,
+          43
+        ]
+      ],
+      "ssim": 0.9837858724498164,
+      "psnr": 36.12513902674885,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.12619574832722,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/26.pgm",
+      "source_id": "26",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\26.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\26_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\26_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\26_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "86b9a5b7456ae6652e31cf19de221249a8719bac52c4e593b135aa98caeede22",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21397584345057896,
+      "confusion_matrix": [
+        [
+          44,
+          135
+        ],
+        [
+          130,
+          49
+        ]
+      ],
+      "ssim": 0.9999971441938288,
+      "psnr": 79.12167204328804,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66657147312763,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/26.pgm",
+      "source_id": "26",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\26.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\26_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\26_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\26_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "d2243978c4df3cd3ff6f2292e88228a6d20af0a08f0147b5ac51b6c77a2d93f1",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.31504946786929244,
+      "confusion_matrix": [
+        [
+          59,
+          120
+        ],
+        [
+          123,
+          56
+        ]
+      ],
+      "ssim": 0.9748768440734651,
+      "psnr": 35.17641286214836,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.38478369133772,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/27.pgm",
+      "source_id": "27",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\27.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\27_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\27_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\27_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "1a8ef3be43abd20dd869213d5086a604e9ac6f2839026f2b9f7e3a5b42c65abf",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21647264442433134,
+      "confusion_matrix": [
+        [
+          50,
+          129
+        ],
+        [
+          139,
+          40
+        ]
+      ],
+      "ssim": 0.9999967349646135,
+      "psnr": 79.3059028715559,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66655783215379,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/27.pgm",
+      "source_id": "27",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\27.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\27_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\27_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\27_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "2de773b816125f47693dd82c2c34933acd15a4fbb0d2a00cd47ca173bdc20032",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.25100652289254394,
+      "confusion_matrix": [
+        [
+          51,
+          128
+        ],
+        [
+          131,
+          48
+        ]
+      ],
+      "ssim": 0.9875045154274088,
+      "psnr": 39.299018249384154,
+      "successful_extractions": 2,
+      "total_attempted_transforms": 6,
+      "resistance_score": 77.36126162535807,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/28.pgm",
+      "source_id": "28",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\28.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\28_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\28_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\28_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "de32dd024a4526d44ea181481bd1bd6f1744a4409ae6d219740313ca379ef0f1",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.20537748509721918,
+      "confusion_matrix": [
+        [
+          49,
+          130
+        ],
+        [
+          137,
+          42
+        ]
+      ],
+      "ssim": 0.9999932951398823,
+      "psnr": 79.31314715149922,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66644317132942,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/28.pgm",
+      "source_id": "28",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\28.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\28_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\28_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\28_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "1b2d88b19ee576c908363b2c0f3cacbe69742f1773b25a23d4b62ceb81e653bd",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.2510377329047158,
+      "confusion_matrix": [
+        [
+          44,
+          135
+        ],
+        [
+          128,
+          51
+        ]
+      ],
+      "ssim": 0.9850362942326036,
+      "psnr": 39.09155370961042,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.16787647442011,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/29.pgm",
+      "source_id": "29",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\29.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\29_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\29_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\29_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "5d6b2360639478895b567ec3ee3b2755aa8c63a536ae7f80c09b3e7d387c4389",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21450641365750134,
+      "confusion_matrix": [
+        [
+          45,
+          134
+        ],
+        [
+          134,
+          45
+        ]
+      ],
+      "ssim": 0.9999971416321767,
+      "psnr": 79.45313543976296,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66657138773922,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/29.pgm",
+      "source_id": "29",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\29.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\29_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\29_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\29_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "11d55cd0042b791d34c7f4f5f7b245e3b152df2b27055175b774e4464c857c7a",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.24348490995911487,
+      "confusion_matrix": [
+        [
+          50,
+          129
+        ],
+        [
+          130,
+          49
+        ]
+      ],
+      "ssim": 0.9812216815946306,
+      "psnr": 33.54462335093922,
+      "successful_extractions": 1,
+      "total_attempted_transforms": 6,
+      "resistance_score": 71.59627827537658,
+      "selected_engine": "JPEGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/30.pgm",
+      "source_id": "30",
+      "source_format": "PGM grayscale",
+      "carrier_format": "PNG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\png\\30.png",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\30_png_stego.png",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\30_png_stego.png.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\30_png_report.json",
+      "payload_bytes": 77,
+      "payload_sha256": "70a7576bd2e60fea1a0041ab04588d6f03c9c2e2d2b99c5d32736907a9f84ee5",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.21739333978340253,
+      "confusion_matrix": [
+        [
+          46,
+          133
+        ],
+        [
+          134,
+          45
+        ]
+      ],
+      "ssim": 0.999993994597852,
+      "psnr": 79.46813699118705,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 66.66646648659507,
+      "selected_engine": "PNGEngine"
+    },
+    {
+      "source_entry": "BOSSbase_1.01/30.pgm",
+      "source_id": "30",
+      "source_format": "PGM grayscale",
+      "carrier_format": "JPEG",
+      "cover_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\covers\\jpeg\\30.jpg",
+      "stego_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\30_jpeg_stego.jpg",
+      "manifest_path": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\stego\\30_jpeg_stego.jpg.manifest.json",
+      "evaluation_report_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\reports\\30_jpeg_report.json",
+      "payload_bytes": 78,
+      "payload_sha256": "7b458f8370a9a0b6db07e04f179ac145ba1f713610bde0d45a7eeb7731db7912",
+      "roundtrip_ok": true,
+      "wrong_password_failed_closed": true,
+      "detector_name": "rich_residual_ensemble",
+      "roc_auc": 0.4526075965169626,
+      "confusion_matrix": [
+        [
+          73,
+          106
+        ],
+        [
+          94,
+          85
+        ]
+      ],
+      "ssim": 0.9758190822105024,
+      "psnr": 34.96543089230527,
+      "successful_extractions": 0,
+      "total_attempted_transforms": 6,
+      "resistance_score": 65.86063607368341,
+      "selected_engine": "JPEGEngine"
+    }
+  ],
+  "summary_json": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\bossbase_benchmark_summary.json",
+  "summary_markdown": "C:\\Users\\User\\Documents\\Playground\\datasets\\bossbase_runs\\sample_30\\bossbase_benchmark_summary.md",
+  "aggregate": [
+    {
+      "carrier_format": "JPEG",
+      "pairs": 30,
+      "roundtrip_successes": 30,
+      "wrong_password_fail_closed_successes": 30,
+      "transform_successes": 17,
+      "total_attempted_transforms": 180,
+      "transform_success_rate": 0.09444444444444444,
+      "mean_roc_auc": 0.29136991146759883,
+      "mean_ssim": 0.9816237157220198,
+      "mean_resistance_score": 68.90712932377649
+    },
+    {
+      "carrier_format": "PNG",
+      "pairs": 30,
+      "roundtrip_successes": 30,
+      "wrong_password_fail_closed_successes": 30,
+      "transform_successes": 0,
+      "total_attempted_transforms": 180,
+      "transform_success_rate": 0.0,
+      "mean_roc_auc": 0.21607731760348722,
+      "mean_ssim": 0.9999941059511478,
+      "mean_resistance_score": 66.66647019837158
+    }
+  ]
+}
